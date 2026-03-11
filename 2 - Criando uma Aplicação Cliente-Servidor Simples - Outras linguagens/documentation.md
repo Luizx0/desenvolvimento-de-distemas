@@ -218,3 +218,5 @@ GET http://localhost:3000/usuarios
 Luiz
 Disciplina: Desenvolvimento de Sistemas
 
+```
+```
