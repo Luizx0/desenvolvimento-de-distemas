@@ -146,6 +146,3 @@ c
 
 Luiz
 Disciplina: Desenvolvimento de Sistemas
-
-```
-```

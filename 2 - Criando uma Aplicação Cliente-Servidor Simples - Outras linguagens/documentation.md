@@ -1,3 +1,4 @@
+```markdown
 # Atividade – API REST e Arquitetura Cliente-Servidor
 
 ## Disciplina
@@ -217,6 +218,3 @@ GET http://localhost:3000/usuarios
 
 Luiz
 Disciplina: Desenvolvimento de Sistemas
-
-```
-```
