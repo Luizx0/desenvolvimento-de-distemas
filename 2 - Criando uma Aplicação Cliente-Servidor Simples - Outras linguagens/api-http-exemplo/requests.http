@@ -1,0 +1,14 @@
+### listar usuarios
+GET http://localhost:3000/usuarios
+
+### buscar usuario por id
+GET http://localhost:3000/usuarios/1
+
+### criar usuario
+POST http://localhost:3000/usuarios
+Content-Type: application/json
+
+{
+ "nome": "João",
+ "idade": 28
+}
