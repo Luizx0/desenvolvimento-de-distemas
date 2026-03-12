@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CliParametros")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ebafc4348c63f1a9c2756bc4750b561b07b9ba4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d978cbe97bf32523cdcddbe6e1885dfa3421e4a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CliParametros")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CliParametros")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

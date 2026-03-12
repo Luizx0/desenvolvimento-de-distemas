@@ -1,0 +1,15 @@
+D:\Luizx\!Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\2 - Programa console que recebe parametros e os devolve em dobro em C#\CliParametros\bin\Debug\net9.0\CliParametros.exe
+D:\Luizx\!Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\2 - Programa console que recebe parametros e os devolve em dobro em C#\CliParametros\bin\Debug\net9.0\CliParametros.deps.json
+D:\Luizx\!Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\2 - Programa console que recebe parametros e os devolve em dobro em C#\CliParametros\bin\Debug\net9.0\CliParametros.runtimeconfig.json
+D:\Luizx\!Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\2 - Programa console que recebe parametros e os devolve em dobro em C#\CliParametros\bin\Debug\net9.0\CliParametros.dll
+D:\Luizx\!Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\2 - Programa console que recebe parametros e os devolve em dobro em C#\CliParametros\bin\Debug\net9.0\CliParametros.pdb
+D:\Luizx\!Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\2 - Programa console que recebe parametros e os devolve em dobro em C#\CliParametros\obj\Debug\net9.0\CliParametros.GeneratedMSBuildEditorConfig.editorconfig
+D:\Luizx\!Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\2 - Programa console que recebe parametros e os devolve em dobro em C#\CliParametros\obj\Debug\net9.0\CliParametros.AssemblyInfoInputs.cache
+D:\Luizx\!Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\2 - Programa console que recebe parametros e os devolve em dobro em C#\CliParametros\obj\Debug\net9.0\CliParametros.AssemblyInfo.cs
+D:\Luizx\!Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\2 - Programa console que recebe parametros e os devolve em dobro em C#\CliParametros\obj\Debug\net9.0\CliParametros.csproj.CoreCompileInputs.cache
+D:\Luizx\!Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\2 - Programa console que recebe parametros e os devolve em dobro em C#\CliParametros\obj\Debug\net9.0\CliParametros.sourcelink.json
+D:\Luizx\!Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\2 - Programa console que recebe parametros e os devolve em dobro em C#\CliParametros\obj\Debug\net9.0\CliParametros.dll
+D:\Luizx\!Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\2 - Programa console que recebe parametros e os devolve em dobro em C#\CliParametros\obj\Debug\net9.0\refint\CliParametros.dll
+D:\Luizx\!Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\2 - Programa console que recebe parametros e os devolve em dobro em C#\CliParametros\obj\Debug\net9.0\CliParametros.pdb
+D:\Luizx\!Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\2 - Programa console que recebe parametros e os devolve em dobro em C#\CliParametros\obj\Debug\net9.0\CliParametros.genruntimeconfig.cache
+D:\Luizx\!Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\2 - Programa console que recebe parametros e os devolve em dobro em C#\CliParametros\obj\Debug\net9.0\ref\CliParametros.dll

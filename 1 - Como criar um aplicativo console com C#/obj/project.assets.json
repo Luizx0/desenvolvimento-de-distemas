@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Luizx\\!Program\\CEUB\\3SEMESTRE\\desenvolvimento-de-distemas\\Programa console que recebe parametros e os devolve em dobro em C#\\CliParametros\\CliParametros.csproj",
-      "projectName": "CliParametros",
-      "projectPath": "D:\\Luizx\\!Program\\CEUB\\3SEMESTRE\\desenvolvimento-de-distemas\\Programa console que recebe parametros e os devolve em dobro em C#\\CliParametros\\CliParametros.csproj",
+      "projectUniqueName": "D:\\Luizx\\!Program\\CEUB\\3SEMESTRE\\desenvolvimento-de-distemas\\1 - Como criar um aplicativo console com C#\\1 - Como criar um aplicativo console com C#.csproj",
+      "projectName": "1 - Como criar um aplicativo console com C#",
+      "projectPath": "D:\\Luizx\\!Program\\CEUB\\3SEMESTRE\\desenvolvimento-de-distemas\\1 - Como criar um aplicativo console com C#\\1 - Como criar um aplicativo console com C#.csproj",
       "packagesPath": "C:\\Users\\ivoma\\.nuget\\packages\\",
-      "outputPath": "D:\\Luizx\\!Program\\CEUB\\3SEMESTRE\\desenvolvimento-de-distemas\\Programa console que recebe parametros e os devolve em dobro em C#\\CliParametros\\obj\\",
+      "outputPath": "D:\\Luizx\\!Program\\CEUB\\3SEMESTRE\\desenvolvimento-de-distemas\\1 - Como criar um aplicativo console com C#\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
