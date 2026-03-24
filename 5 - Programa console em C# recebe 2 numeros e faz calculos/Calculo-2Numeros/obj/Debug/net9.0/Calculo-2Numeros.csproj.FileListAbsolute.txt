@@ -1,0 +1,15 @@
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\5 - Programa console em C# recebe 2 numeros e faz calculos\Calculo-2Numeros\bin\Debug\net9.0\Calculo-2Numeros.exe
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\5 - Programa console em C# recebe 2 numeros e faz calculos\Calculo-2Numeros\bin\Debug\net9.0\Calculo-2Numeros.deps.json
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\5 - Programa console em C# recebe 2 numeros e faz calculos\Calculo-2Numeros\bin\Debug\net9.0\Calculo-2Numeros.runtimeconfig.json
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\5 - Programa console em C# recebe 2 numeros e faz calculos\Calculo-2Numeros\bin\Debug\net9.0\Calculo-2Numeros.dll
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\5 - Programa console em C# recebe 2 numeros e faz calculos\Calculo-2Numeros\bin\Debug\net9.0\Calculo-2Numeros.pdb
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\5 - Programa console em C# recebe 2 numeros e faz calculos\Calculo-2Numeros\obj\Debug\net9.0\Calculo-2Numeros.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\5 - Programa console em C# recebe 2 numeros e faz calculos\Calculo-2Numeros\obj\Debug\net9.0\Calculo-2Numeros.AssemblyInfoInputs.cache
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\5 - Programa console em C# recebe 2 numeros e faz calculos\Calculo-2Numeros\obj\Debug\net9.0\Calculo-2Numeros.AssemblyInfo.cs
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\5 - Programa console em C# recebe 2 numeros e faz calculos\Calculo-2Numeros\obj\Debug\net9.0\Calculo-2Numeros.csproj.CoreCompileInputs.cache
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\5 - Programa console em C# recebe 2 numeros e faz calculos\Calculo-2Numeros\obj\Debug\net9.0\Calculo-2Numeros.sourcelink.json
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\5 - Programa console em C# recebe 2 numeros e faz calculos\Calculo-2Numeros\obj\Debug\net9.0\Calculo-2Numeros.dll
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\5 - Programa console em C# recebe 2 numeros e faz calculos\Calculo-2Numeros\obj\Debug\net9.0\refint\Calculo-2Numeros.dll
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\5 - Programa console em C# recebe 2 numeros e faz calculos\Calculo-2Numeros\obj\Debug\net9.0\Calculo-2Numeros.pdb
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\5 - Programa console em C# recebe 2 numeros e faz calculos\Calculo-2Numeros\obj\Debug\net9.0\Calculo-2Numeros.genruntimeconfig.cache
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\5 - Programa console em C# recebe 2 numeros e faz calculos\Calculo-2Numeros\obj\Debug\net9.0\ref\Calculo-2Numeros.dll
