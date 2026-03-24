@@ -1,0 +1,15 @@
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\6 - Programa console que lê 5 numeros e apresenta o maior\Resultado-maior-numero\bin\Debug\net9.0\Resultado-maior-numero.exe
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\6 - Programa console que lê 5 numeros e apresenta o maior\Resultado-maior-numero\bin\Debug\net9.0\Resultado-maior-numero.deps.json
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\6 - Programa console que lê 5 numeros e apresenta o maior\Resultado-maior-numero\bin\Debug\net9.0\Resultado-maior-numero.runtimeconfig.json
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\6 - Programa console que lê 5 numeros e apresenta o maior\Resultado-maior-numero\bin\Debug\net9.0\Resultado-maior-numero.dll
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\6 - Programa console que lê 5 numeros e apresenta o maior\Resultado-maior-numero\bin\Debug\net9.0\Resultado-maior-numero.pdb
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\6 - Programa console que lê 5 numeros e apresenta o maior\Resultado-maior-numero\obj\Debug\net9.0\Resultado-maior-numero.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\6 - Programa console que lê 5 numeros e apresenta o maior\Resultado-maior-numero\obj\Debug\net9.0\Resultado-maior-numero.AssemblyInfoInputs.cache
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\6 - Programa console que lê 5 numeros e apresenta o maior\Resultado-maior-numero\obj\Debug\net9.0\Resultado-maior-numero.AssemblyInfo.cs
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\6 - Programa console que lê 5 numeros e apresenta o maior\Resultado-maior-numero\obj\Debug\net9.0\Resultado-maior-numero.csproj.CoreCompileInputs.cache
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\6 - Programa console que lê 5 numeros e apresenta o maior\Resultado-maior-numero\obj\Debug\net9.0\Resultado-maior-numero.sourcelink.json
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\6 - Programa console que lê 5 numeros e apresenta o maior\Resultado-maior-numero\obj\Debug\net9.0\Resultado-maior-numero.dll
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\6 - Programa console que lê 5 numeros e apresenta o maior\Resultado-maior-numero\obj\Debug\net9.0\refint\Resultado-maior-numero.dll
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\6 - Programa console que lê 5 numeros e apresenta o maior\Resultado-maior-numero\obj\Debug\net9.0\Resultado-maior-numero.pdb
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\6 - Programa console que lê 5 numeros e apresenta o maior\Resultado-maior-numero\obj\Debug\net9.0\Resultado-maior-numero.genruntimeconfig.cache
+C:\Users\lz.araujo\Documents\git\desenvolvimento-de-distemas\6 - Programa console que lê 5 numeros e apresenta o maior\Resultado-maior-numero\obj\Debug\net9.0\ref\Resultado-maior-numero.dll
