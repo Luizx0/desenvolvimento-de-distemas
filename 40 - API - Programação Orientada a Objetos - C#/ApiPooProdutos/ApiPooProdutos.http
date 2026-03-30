@@ -1,0 +1,34 @@
+@ApiPooProdutos_HostAddress = http://localhost:5136
+
+### Listar todos os produtos
+GET {{ApiPooProdutos_HostAddress}}/api/produtos
+Accept: application/json
+
+###
+
+### Buscar produto por id
+GET {{ApiPooProdutos_HostAddress}}/api/produtos/1
+Accept: application/json
+
+###
+
+### Cadastrar produto comum
+POST {{ApiPooProdutos_HostAddress}}/api/produtos/comum
+Content-Type: application/json
+
+{
+	"nome": "Camiseta",
+	"precoBase": 79.90
+}
+
+###
+
+### Cadastrar produto eletronico
+POST {{ApiPooProdutos_HostAddress}}/api/produtos/eletronico
+Content-Type: application/json
+
+{
+	"nome": "Headset",
+	"precoBase": 249.90,
+	"taxaGarantia": 12
+}
