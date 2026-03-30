@@ -1,0 +1,15 @@
+D:\Luizx\Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\10 - Criando uma Aplicação Cliente-Servidor Simples - C#\ClienteApi\bin\Debug\net9.0\ClienteApi.exe
+D:\Luizx\Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\10 - Criando uma Aplicação Cliente-Servidor Simples - C#\ClienteApi\bin\Debug\net9.0\ClienteApi.deps.json
+D:\Luizx\Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\10 - Criando uma Aplicação Cliente-Servidor Simples - C#\ClienteApi\bin\Debug\net9.0\ClienteApi.runtimeconfig.json
+D:\Luizx\Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\10 - Criando uma Aplicação Cliente-Servidor Simples - C#\ClienteApi\bin\Debug\net9.0\ClienteApi.dll
+D:\Luizx\Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\10 - Criando uma Aplicação Cliente-Servidor Simples - C#\ClienteApi\bin\Debug\net9.0\ClienteApi.pdb
+D:\Luizx\Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\10 - Criando uma Aplicação Cliente-Servidor Simples - C#\ClienteApi\obj\Debug\net9.0\ClienteApi.GeneratedMSBuildEditorConfig.editorconfig
+D:\Luizx\Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\10 - Criando uma Aplicação Cliente-Servidor Simples - C#\ClienteApi\obj\Debug\net9.0\ClienteApi.AssemblyInfoInputs.cache
+D:\Luizx\Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\10 - Criando uma Aplicação Cliente-Servidor Simples - C#\ClienteApi\obj\Debug\net9.0\ClienteApi.AssemblyInfo.cs
+D:\Luizx\Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\10 - Criando uma Aplicação Cliente-Servidor Simples - C#\ClienteApi\obj\Debug\net9.0\ClienteApi.csproj.CoreCompileInputs.cache
+D:\Luizx\Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\10 - Criando uma Aplicação Cliente-Servidor Simples - C#\ClienteApi\obj\Debug\net9.0\ClienteApi.sourcelink.json
+D:\Luizx\Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\10 - Criando uma Aplicação Cliente-Servidor Simples - C#\ClienteApi\obj\Debug\net9.0\ClienteApi.dll
+D:\Luizx\Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\10 - Criando uma Aplicação Cliente-Servidor Simples - C#\ClienteApi\obj\Debug\net9.0\refint\ClienteApi.dll
+D:\Luizx\Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\10 - Criando uma Aplicação Cliente-Servidor Simples - C#\ClienteApi\obj\Debug\net9.0\ClienteApi.pdb
+D:\Luizx\Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\10 - Criando uma Aplicação Cliente-Servidor Simples - C#\ClienteApi\obj\Debug\net9.0\ClienteApi.genruntimeconfig.cache
+D:\Luizx\Program\CEUB\3SEMESTRE\desenvolvimento-de-distemas\10 - Criando uma Aplicação Cliente-Servidor Simples - C#\ClienteApi\obj\Debug\net9.0\ref\ClienteApi.dll
