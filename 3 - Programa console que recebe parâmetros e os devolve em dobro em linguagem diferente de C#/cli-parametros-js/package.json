@@ -1,0 +1,19 @@
+{
+  "name": "cli-parametros-js",
+  "version": "1.0.0",
+  "description": "Aplicação CLI em JavaScript que duplica parâmetros de linha de comando",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "cli",
+    "parameters",
+    "javascript"
+  ],
+  "author": "Luiz",
+  "license": "MIT",
+  "dependencies": {
+    "pdfkit": "^0.18.0"
+  }
+}
