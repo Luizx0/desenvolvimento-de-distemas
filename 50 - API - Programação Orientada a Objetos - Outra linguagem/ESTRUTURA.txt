@@ -1,0 +1,265 @@
+═══════════════════════════════════════════════════════════════════
+                    ESTRUTURA DO PROJETO
+═══════════════════════════════════════════════════════════════════
+
+50 - API - Programação Orientada a Objetos - Outra linguagem/
+│
+├── 📄 INDEX.md                              ← LEIA PRIMEIRO
+│   └─ Índice completo do projeto
+│
+├── 📄 README.md
+│   └─ Instruções rápidas (5 min)
+│
+├── 📄 guia-execucao-evidencias.md
+│   └─ Passo-a-passo com exemplos e testes (15 min)
+│
+├── 📄 documentation.md
+│   └─ Documentação completa e detalhada (30 min)
+│
+└── 📂 ApiProdutosJs/                        ← CÓDIGO DA API
+    │
+    ├── 📄 package.json
+    │   └─ Dependências do projeto
+    │       • express: Framework web
+    │
+    ├── 📄 server.js
+    │   └─ Servidor principal
+    │       • Cria app Express
+    │       • Define middleware
+    │       • Inicia na porta 3000
+    │
+    ├── 📄 cliente.js
+    │   └─ Cliente exemplo
+    │       • Classe ClienteProdutosApi
+    │       • Faz requisições à API
+    │       • 10 exemplos de testes
+    │
+    ├── 📄 ApiProdutosJs.http
+    │   └─ Testes para VSCode REST Client
+    │       • 21 requisições de exemplo
+    │       • GET, POST, PUT, DELETE
+    │       • Todos os endpoints
+    │
+    ├── 📄 .gitignore
+    │   └─ Arquivos ignorados pelo Git
+    │
+    │
+    ├── 📂 models/                            ← CLASSES POO
+    │   │
+    │   ├── 📄 Produto.js
+    │   │   └─ CLASSE BASE (Superclasse)
+    │   │       • constructor(id, nome, preco, estoque)
+    │   │       • obterInfo()
+    │   │       • obterDescricao()
+    │   │       • calcularValorTotal()
+    │   │       • atualizarPreco()
+    │   │       • atualizarEstoque()
+    │   │
+    │   ├── 📄 Eletronico.js
+    │   │   └─ CLASSE FILHA (Herança de Produto)
+    │   │       • extends Produto
+    │   │       • Propriedades: voltagem, marca, garantiaEmMeses
+    │   │       • Sobrescrita: obterInfo()
+    │   │       • Sobrescrita: obterDescricao()
+    │   │       • Método próprio: calcularSeguro()
+    │   │       • Método próprio: estaEmGarantia()
+    │   │
+    │   └── 📄 Roupa.js
+    │       └─ CLASSE FILHA (Herança de Produto)
+    │           • extends Produto
+    │           • Propriedades: tamanho, cor, material, colecao
+    │           • Sobrescrita: obterInfo()
+    │           • Sobrescrita: obterDescricao()
+    │           • Método próprio: calcularDescontoColecao()
+    │           • Método próprio: obterCuidados()
+    │           • Método próprio: verificarDisponibilidade()
+    │
+    │
+    ├── 📂 controllers/                       ← LÓGICA DE NEGÓCIO
+    │   │
+    │   └── 📄 ProdutoController.js
+    │       └─ Controlador CRUD
+    │           • new ProdutoController()
+    │           • this.produtos[] - Array de produtos
+    │           • inicializarProdutos() - 6 produtos de exemplo
+    │           
+    │           ▸ MÉTODOS GET:
+    │             • obterTodos()
+    │             • obterPorId(id)
+    │             • obterDescricao(id)
+    │             • filtrarPorTipo(tipo)
+    │             • obterEstoqueBaixo(limite)
+    │             • obterInfoEletronico(id) - COM POLIMORFISMO
+    │             • obterInfoRoupa(id) - COM POLIMORFISMO
+    │
+    │           ▸ MÉTODOS CREATE:
+    │             • criar(dados) - Cria novo produto
+    │
+    │           ▸ MÉTODOS UPDATE:
+    │             • atualizar(id, dados)
+    │
+    │           ▸ MÉTODOS DELETE:
+    │             • deletar(id)
+    │
+    │           ▸ MÉTODOS AUXILIARES:
+    │             • calcularValorInventario()
+    │
+    │
+    └── 📂 routes/                            ← ENDPOINTS HTTP
+        │
+        └── 📄 produtos.js
+            └─ Rotas da API (Express Router)
+                
+                ▸ GET ROUTES:
+                  • GET /               - Listar todos
+                  • GET /:id            - Obter por ID
+                  • GET /:id/descricao  - Descrição
+                  • GET /tipo/:tipo     - Filtrar tipo
+                  • GET /estoque/baixo/:limite - Estoque baixo
+                  • GET /info/eletronico/:id   - Info eletrônico
+                  • GET /info/roupa/:id        - Info roupa
+                
+                ▸ POST ROUTE:
+                  • POST /           - Criar novo produto
+                
+                ▸ PUT ROUTE:
+                  • PUT /:id         - Atualizar produto
+                
+                ▸ DELETE ROUTE:
+                  • DELETE /:id      - Deletar produto
+
+
+═══════════════════════════════════════════════════════════════════
+                    FLUXO DE DADOS
+═══════════════════════════════════════════════════════════════════
+
+REQUEST HTTP
+    ↓
+server.js (Express app)
+    ↓
+routes/produtos.js (Router)
+    ↓
+controllers/ProdutoController.js (Lógica)
+    ↓
+models/Produto.js, Eletronico.js, Roupa.js (Objetos com POO)
+    ↓
+JSON Response
+    ↓
+CLIENT (Browser, Postman, REST Client, etc)
+
+
+═══════════════════════════════════════════════════════════════════
+                    CONCEITOS POO
+═══════════════════════════════════════════════════════════════════
+
+1. CLASSES
+   └─ Produto.js
+      Eletronico.js
+      Roupa.js
+
+2. HERANÇA
+   └─ Eletronico extends Produto
+      Roupa extends Produto
+
+3. POLIMORFISMO
+   └─ obterDescricao()
+      • Produto: "Nome - R$ Preço"
+      • Eletronico: "Nome (Marca) - VoltageV - R$ Preço - Garantia"
+      • Roupa: "Nome - Tamanho/Cor (Material) - R$ Preço"
+
+4. ENCAPSULAMENTO
+   └─ Propriedades e métodos públicos/privados
+
+5. ABSTRAÇÃO
+   └─ Interface simplificada (obterInfo)
+
+
+═══════════════════════════════════════════════════════════════════
+                    ARQUIVOS IMPORTANTES
+═══════════════════════════════════════════════════════════════════
+
+Para Aprender POO:
+├─ models/Produto.js              (Classe base)
+└─ models/Eletronico.js           (Herança)
+   models/Roupa.js                (Herança + Polimorfismo)
+
+Para Executar a API:
+├─ server.js
+├─ package.json
+└─ npm install && npm start
+
+Para Testar a API:
+├─ ApiProdutosJs.http             (VSCode REST Client)
+└─ cliente.js                     (Cliente JavaScript)
+
+Para Entender Tudo:
+└─ documentation.md               (Documentação completa)
+
+
+═══════════════════════════════════════════════════════════════════
+                    COMO USAR ESTE PROJETO
+═══════════════════════════════════════════════════════════════════
+
+PASSO 1: Entender a Estrutura
+└─ Leia este arquivo (ESTRUTURA.txt)
+
+PASSO 2: Aprender Rapidamente
+└─ Leia README.md (5 min)
+
+PASSO 3: Executar
+└─ Siga guia-execucao-evidencias.md (15 min)
+
+PASSO 4: Aprofundar
+└─ Leia documentation.md (30 min)
+
+PASSO 5: Estudar Código
+└─ Abra os arquivos em models/, controllers/, routes/
+
+
+═══════════════════════════════════════════════════════════════════
+                    DADOS DE EXEMPLO
+═══════════════════════════════════════════════════════════════════
+
+Eletrônicos (3):
+├─ ID 1: Notebook Dell - R$ 2.500,00 (5 em estoque)
+├─ ID 2: Smartphone Samsung - R$ 1.200,00 (15 em estoque)
+└─ ID 3: Cabo USB-C - R$ 45,00 (50 em estoque)
+
+Roupas (3):
+├─ ID 4: Camiseta Básica - R$ 49,90 (100 em estoque)
+├─ ID 5: Calça Jeans - R$ 120,00 (80 em estoque)
+└─ ID 6: Jaqueta de Couro - R$ 350,00 (20 em estoque)
+
+
+═══════════════════════════════════════════════════════════════════
+                    REQUISITOS
+═══════════════════════════════════════════════════════════════════
+
+✓ Node.js 14+
+✓ npm 6+
+✓ VSCode (opcional, para REST Client)
+
+Instação:
+$ npm install
+
+
+═══════════════════════════════════════════════════════════════════
+                    EXECUÇÃO
+═══════════════════════════════════════════════════════════════════
+
+$ npm start
+
+Servidor rodará em: http://localhost:3000
+
+Testes:
+$ curl http://localhost:3000/api/produtos
+
+
+═══════════════════════════════════════════════════════════════════
+
+**Status**: ✅ COMPLETO
+**Linguagem**: JavaScript (Node.js)
+**Framework**: Express.js
+**Conceitos**: Classes, Herança, Polimorfismo, REST, CRUD
+
+═══════════════════════════════════════════════════════════════════

@@ -1,0 +1,176 @@
+### API de Produtos com POO em JavaScript
+### Arquivo para testar requisições no VSCode usando REST Client extension
+
+@baseUrl = http://localhost:3000
+@apiUrl = http://localhost:3000/api
+
+###
+# INFORMAÇÕES GERAIS DA API
+###
+
+### 1. Informações sobre a API
+GET {{baseUrl}}/
+
+###
+
+### 2. Health Check - Verificar se o servidor está rodando
+GET {{baseUrl}}/health
+
+###
+# OPERAÇÕES CRUD - TODOS OS PRODUTOS
+###
+
+### 3. Obter todos os produtos
+GET {{apiUrl}}/produtos
+
+###
+
+### 4. Obter produto por ID (ID: 1 - Notebook)
+GET {{apiUrl}}/produtos/1
+
+###
+
+### 5. Obter ordenação de descrição de um produto
+GET {{apiUrl}}/produtos/1/descricao
+
+###
+
+### 6. Obter todos os eletrônicos
+GET {{apiUrl}}/produtos/tipo/Eletronico
+
+###
+
+### 7. Obter todas as roupas
+GET {{apiUrl}}/produtos/tipo/Roupa
+
+###
+
+### 8. Obter produtos com estoque baixo (limite: 20)
+GET {{apiUrl}}/produtos/estoque/baixo/20
+
+###
+# OPERAÇÕES ESPECÍFICAS POR TIPO
+###
+
+### 9. Obter informações específicas de um Eletrônico (ID: 1)
+GET {{apiUrl}}/produtos/info/eletronico/1
+
+###
+
+### 10. Obter informações específicas de um Eletrônico (ID: 2 - Smartphone)
+GET {{apiUrl}}/produtos/info/eletronico/2
+
+###
+
+### 11. Obter informações específicas de uma Roupa (ID: 4)
+GET {{apiUrl}}/produtos/info/roupa/4
+
+###
+
+### 12. Obter informações específicas de uma Roupa (ID: 5 - Calça Jeans)
+GET {{apiUrl}}/produtos/info/roupa/5
+
+###
+# CRIAR NOVOS PRODUTOS
+###
+
+### 13. Criar novo Eletrônico (Monitor)
+POST {{apiUrl}}/produtos
+Content-Type: application/json
+
+{
+  "tipo": "Eletronico",
+  "nome": "Monitor LG 24\"",
+  "preco": 650.00,
+  "estoque": 12,
+  "voltagem": 110,
+  "marca": "LG",
+  "garantiaEmMeses": 24
+}
+
+###
+
+### 14. Criar nova Roupa (Camiseta)
+POST {{apiUrl}}/produtos
+Content-Type: application/json
+
+{
+  "tipo": "Roupa",
+  "nome": "Camiseta Premium",
+  "preco": 89.90,
+  "estoque": 200,
+  "tamanho": "G",
+  "cor": "Vermelho",
+  "material": "Algodão",
+  "colecao": "Premium"
+}
+
+###
+
+### 15. Criar produto genérico (sem tipo específico)
+POST {{apiUrl}}/produtos
+Content-Type: application/json
+
+{
+  "nome": "Produto Genérico",
+  "preco": 99.99,
+  "estoque": 50
+}
+
+###
+# ATUALIZAR PRODUTOS
+###
+
+### 16. Atualizar preço de um produto (ID: 1)
+PUT {{apiUrl}}/produtos/1
+Content-Type: application/json
+
+{
+  "preco": 2800.00
+}
+
+###
+
+### 17. Atualizar estoque (ID: 4)
+PUT {{apiUrl}}/produtos/4
+Content-Type: application/json
+
+{
+  "estoque": 150
+}
+
+###
+
+### 18. Atualizar informações de eletrônico (ID: 2)
+PUT {{apiUrl}}/produtos/2
+Content-Type: application/json
+
+{
+  "preco": 1299.90,
+  "garantiaEmMeses": 18
+}
+
+###
+
+### 19. Atualizar informações de roupa (ID: 5)
+PUT {{apiUrl}}/produtos/5
+Content-Type: application/json
+
+{
+  "preco": 135.00,
+  "cor": "Preto"
+}
+
+###
+# DELETAR PRODUTOS
+###
+
+### 20. Deletar um produto (ID: 7 - se foi criado)
+DELETE {{apiUrl}}/produtos/7
+
+###
+
+### 21. Obter após deleção para verificar
+GET {{apiUrl}}/produtos
+
+###

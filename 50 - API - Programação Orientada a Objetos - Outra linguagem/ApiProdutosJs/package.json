@@ -1,0 +1,23 @@
+{
+  "name": "api-produtos-js",
+  "version": "1.0.0",
+  "description": "API REST em JavaScript com Programação Orientada a Objetos",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "api",
+    "rest",
+    "javascript",
+    "poo",
+    "node"
+  ],
+  "author": "Estudante",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
