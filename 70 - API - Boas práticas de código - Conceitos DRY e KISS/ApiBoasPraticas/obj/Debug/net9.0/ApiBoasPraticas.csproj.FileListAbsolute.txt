@@ -1,0 +1,8 @@
+D:\LUIZ\!Program\CEUB\ds de sis\desenvolvimento-de-distemas\70 - API - Boas práticas de código - Conceitos DRY e KISS\ApiBoasPraticas\obj\Debug\net9.0\ApiBoasPraticas.csproj.AssemblyReference.cache
+D:\LUIZ\!Program\CEUB\ds de sis\desenvolvimento-de-distemas\70 - API - Boas práticas de código - Conceitos DRY e KISS\ApiBoasPraticas\obj\Debug\net9.0\ApiBoasPraticas.GeneratedMSBuildEditorConfig.editorconfig
+D:\LUIZ\!Program\CEUB\ds de sis\desenvolvimento-de-distemas\70 - API - Boas práticas de código - Conceitos DRY e KISS\ApiBoasPraticas\obj\Debug\net9.0\ApiBoasPraticas.AssemblyInfoInputs.cache
+D:\LUIZ\!Program\CEUB\ds de sis\desenvolvimento-de-distemas\70 - API - Boas práticas de código - Conceitos DRY e KISS\ApiBoasPraticas\obj\Debug\net9.0\ApiBoasPraticas.AssemblyInfo.cs
+D:\LUIZ\!Program\CEUB\ds de sis\desenvolvimento-de-distemas\70 - API - Boas práticas de código - Conceitos DRY e KISS\ApiBoasPraticas\obj\Debug\net9.0\ApiBoasPraticas.csproj.CoreCompileInputs.cache
+D:\LUIZ\!Program\CEUB\ds de sis\desenvolvimento-de-distemas\70 - API - Boas práticas de código - Conceitos DRY e KISS\ApiBoasPraticas\obj\Debug\net9.0\ApiBoasPraticas.MvcApplicationPartsAssemblyInfo.cs
+D:\LUIZ\!Program\CEUB\ds de sis\desenvolvimento-de-distemas\70 - API - Boas práticas de código - Conceitos DRY e KISS\ApiBoasPraticas\obj\Debug\net9.0\ApiBoasPraticas.MvcApplicationPartsAssemblyInfo.cache
+D:\LUIZ\!Program\CEUB\ds de sis\desenvolvimento-de-distemas\70 - API - Boas práticas de código - Conceitos DRY e KISS\ApiBoasPraticas\obj\Debug\net9.0\ApiBoasPraticas.sourcelink.json

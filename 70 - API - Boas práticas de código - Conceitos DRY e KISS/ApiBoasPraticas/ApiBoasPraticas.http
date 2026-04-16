@@ -1,0 +1,139 @@
+@ApiBoasPraticas_HostAddress = https://localhost:5001
+
+### 1. Listar todas as pessoas (Boas Práticas)
+GET {{ApiBoasPraticas_HostAddress}}/api/pessoas
+Accept: application/json
+
+###
+
+### 2. Obter pessoa por ID (existente)
+GET {{ApiBoasPraticas_HostAddress}}/api/pessoas/1
+Accept: application/json
+
+###
+
+### 3. Obter pessoa por ID (inexistente)
+GET {{ApiBoasPraticas_HostAddress}}/api/pessoas/999
+Accept: application/json
+
+###
+
+### 4. Criar pessoa com CPF válido (DRY - serviço reutilizável)
+POST {{ApiBoasPraticas_HostAddress}}/api/pessoas
+Content-Type: application/json
+
+{
+  "nome": "Ana Costa",
+  "cpf": "529.982.247-25",
+  "dataNascimento": "1998-03-15"
+}
+
+###
+
+### 5. Criar pessoa com CPF inválido (formato errado)
+POST {{ApiBoasPraticas_HostAddress}}/api/pessoas
+Content-Type: application/json
+
+{
+  "nome": "Teste",
+  "cpf": "123.456.789-00",
+  "dataNascimento": "1990-01-01"
+}
+
+###
+
+### 6. Criar pessoa com CPF duplicado
+POST {{ApiBoasPraticas_HostAddress}}/api/pessoas
+Content-Type: application/json
+
+{
+  "nome": "Duplicado",
+  "cpf": "123.456.789-09",
+  "dataNascimento": "1990-01-01"
+}
+
+###
+
+### 7. Criar pessoa com nome inválido (muito curto)
+POST {{ApiBoasPraticas_HostAddress}}/api/pessoas
+Content-Type: application/json
+
+{
+  "nome": "A",
+  "cpf": "529.982.247-25",
+  "dataNascimento": "1990-01-01"
+}
+
+###
+
+### 8. Atualizar pessoa (parcial)
+PUT {{ApiBoasPraticas_HostAddress}}/api/pessoas/1
+Content-Type: application/json
+
+{
+  "nome": "João Silva Atualizado"
+}
+
+###
+
+### 9. Deletar pessoa
+DELETE {{ApiBoasPraticas_HostAddress}}/api/pessoas/2
+Accept: application/json
+
+###
+
+### 10. Verificar lista após operações
+GET {{ApiBoasPraticas_HostAddress}}/api/pessoas
+Accept: application/json
+
+###
+
+### ========================================
+### EXEMPLOS DE VIOLAÇÕES (APENAS PARA DEMONSTRAÇÃO)
+### ========================================
+
+### 11. Criar pessoa violando DRY (código duplicado)
+POST {{ApiBoasPraticas_HostAddress}}/api/pessoas/violacao/dry
+Content-Type: application/json
+
+{
+  "nome": "Violação DRY",
+  "cpf": "529.982.247-25",
+  "dataNascimento": "1995-06-20"
+}
+
+###
+
+### 12. Criar pessoa violando KISS (método complexo)
+POST {{ApiBoasPraticas_HostAddress}}/api/pessoas/violacao/kiss
+Content-Type: application/json
+
+{
+  "pessoa": {
+    "nome": "Violação KISS",
+    "cpf": "529.982.247-25",
+    "dataNascimento": "1992-09-10"
+  },
+  "validarCpfRemoto": true,
+  "enviarEmailConfirmacao": true,
+  "gerarRelatorio": true,
+  "notificarAdministrador": true
+}
+
+###
+
+### ========================================
+### CPFs VÁLIDOS PARA TESTE
+### ========================================
+# 529.982.247-25 (válido)
+# 123.456.789-09 (válido - usado nos dados iniciais)
+# 987.654.321-00 (válido - usado nos dados iniciais)
+# 111.222.333-44 (válido - usado nos dados iniciais)
+
+### ========================================
+### CPFs INVÁLIDOS PARA TESTE
+### ========================================
+# 000.000.000-00 (sequencial)
+# 111.111.111-11 (sequencial)
+# 999.999.999-99 (sequencial)
+# 123.456.789-00 (dígitos incorretos)
