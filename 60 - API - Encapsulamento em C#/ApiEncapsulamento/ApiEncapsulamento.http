@@ -1,0 +1,109 @@
+@ApiEncapsulamento_HostAddress = https://localhost:5001
+
+### 1. Listar todos os usuários
+GET {{ApiEncapsulamento_HostAddress}}/api/usuarios
+Accept: application/json
+
+###
+
+### 2. Obter usuário por ID (usuário existente)
+GET {{ApiEncapsulamento_HostAddress}}/api/usuarios/1
+Accept: application/json
+
+###
+
+### 3. Obter usuário por ID (usuário inexistente)
+GET {{ApiEncapsulamento_HostAddress}}/api/usuarios/999
+Accept: application/json
+
+###
+
+### 4. Criar novo usuário (dados válidos)
+POST {{ApiEncapsulamento_HostAddress}}/api/usuarios
+Content-Type: application/json
+
+{
+  "nome": "Ana Costa",
+  "email": "ana.costa@email.com",
+  "dataNascimento": "2000-03-15"
+}
+
+###
+
+### 5. Criar usuário com nome inválido (vazio)
+POST {{ApiEncapsulamento_HostAddress}}/api/usuarios
+Content-Type: application/json
+
+{
+  "nome": "",
+  "email": "teste@email.com",
+  "dataNascimento": "2000-03-15"
+}
+
+###
+
+### 6. Criar usuário com email inválido
+POST {{ApiEncapsulamento_HostAddress}}/api/usuarios
+Content-Type: application/json
+
+{
+  "nome": "Teste",
+  "email": "email-invalido",
+  "dataNascimento": "2000-03-15"
+}
+
+###
+
+### 7. Criar usuário com idade insuficiente
+POST {{ApiEncapsulamento_HostAddress}}/api/usuarios
+Content-Type: application/json
+
+{
+  "nome": "Criança",
+  "email": "crianca@email.com",
+  "dataNascimento": "2020-01-01"
+}
+
+###
+
+### 8. Atualizar usuário existente
+PUT {{ApiEncapsulamento_HostAddress}}/api/usuarios/1
+Content-Type: application/json
+
+{
+  "nome": "João Silva Atualizado",
+  "email": "joao.atualizado@email.com",
+  "dataNascimento": "1990-05-15"
+}
+
+###
+
+### 9. Atualizar usuário inexistente
+PUT {{ApiEncapsulamento_HostAddress}}/api/usuarios/999
+Content-Type: application/json
+
+{
+  "nome": "Usuário Inexistente",
+  "email": "inexistente@email.com",
+  "dataNascimento": "1990-01-01"
+}
+
+###
+
+### 10. Deletar usuário existente
+DELETE {{ApiEncapsulamento_HostAddress}}/api/usuarios/2
+Accept: application/json
+
+###
+
+### 11. Deletar usuário inexistente
+DELETE {{ApiEncapsulamento_HostAddress}}/api/usuarios/999
+Accept: application/json
+
+###
+
+### 12. Verificar lista após operações
+GET {{ApiEncapsulamento_HostAddress}}/api/usuarios
+Accept: application/json
+
+###

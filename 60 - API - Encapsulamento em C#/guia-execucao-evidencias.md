@@ -16,10 +16,11 @@ Criar uma API em C# utilizando o conceito de encapsulamento, demonstrando os pri
 - ✅ `documentation.md` - Documentação completa da API e conceitos de encapsulamento
 - ✅ `guia-execucao-evidencias.md` - Guia de execução e evidências (este arquivo)
 
-#### 📁 Código-Fonte (Não incluído nesta entrega)
-- ❌ `ApiEncapsulamento/` - Pasta com código C# (não entregue fisicamente)
-- ❌ `Controllers/`, `Models/`, `Data/` - Estrutura do projeto
-- ❌ `Program.cs`, `appsettings.json` - Arquivos de configuração
+#### 📁 Código-Fonte (Disponível no Repositório)
+- ✅ `ApiEncapsulamento/` - Pasta com código C# completo
+- ✅ `Controllers/`, `Models/`, `Data/` - Estrutura do projeto
+- ✅ `Program.cs`, `appsettings.json` - Arquivos de configuração
+- ✅ `ApiEncapsulamento.http` - Arquivo de testes REST
 
 ---
 
@@ -33,11 +34,23 @@ A atividade completa está localizada em:
 ```
 desenvolvimento-de-distemas/
 └── 60 - API - Encapsulamento em C#/
-    ├── documentation.md              ← Documentação completa
-    └── guia-execucao-evidencias.md   ← Este documento
+    ├── documentation.md                    ← Documentação completa
+    ├── guia-execucao-evidencias.md         ← Este documento
+    └── ApiEncapsulamento/                  ← Projeto C# completo
+        ├── Controllers/
+        │   └── UsuariosController.cs
+        ├── Models/
+        │   └── Usuario.cs
+        ├── Data/
+        │   └── UsuarioRepository.cs
+        ├── Program.cs
+        ├── appsettings.json
+        ├── appsettings.Development.json
+        ├── ApiEncapsulamento.csproj
+        └── ApiEncapsulamento.http
 ```
 
-**Nota:** O código-fonte C# não foi incluído nesta entrega física, mas está disponível no repositório GitHub acima.
+**Nota:** Todo o código-fonte C# foi desenvolvido e está disponível tanto no repositório GitHub quanto na estrutura local da atividade.
 
 ---
 
@@ -160,13 +173,34 @@ public void AtualizarDados(string nome, string email, DateTime dataNascimento)
 
 ---
 
-## 🚀 Como Executar (Instruções do Repositório)
+## 🚀 Como Executar
 
 ### Pré-requisitos
-- **.NET 6.0+** instalado
-- **Visual Studio 2022** ou **VS Code**
+- **.NET 9.0** instalado (ou .NET 6.0+)
+- **Visual Studio 2022** ou **VS Code** (opcional)
 
-### Passos
+### 📍 Opção 1: Execução Local (Código já disponível)
+
+Se você tem acesso à pasta local da atividade:
+
+1. **Navegar para pasta do projeto**:
+   ```bash
+   cd "60 - API - Encapsulamento em C#/ApiEncapsulamento"
+   ```
+
+2. **Executar a API**:
+   ```bash
+   dotnet run
+   ```
+
+3. **Testar**:
+   - API: `https://localhost:5001/api/usuarios`
+   - Arquivo de testes: Abrir `ApiEncapsulamento.http` no VS Code
+
+### 📍 Opção 2: Execução via Repositório
+
+Se precisar clonar do repositório:
+
 1. **Clonar repositório**:
    ```bash
    git clone https://github.com/Luizx0/desenvolvimento-de-distemas.git
@@ -174,7 +208,7 @@ public void AtualizarDados(string nome, string email, DateTime dataNascimento)
 
 2. **Navegar para pasta**:
    ```bash
-   cd desenvolvimento-de-distemas/60 - API - Encapsulamento em C#
+   cd desenvolvimento-de-distemas/60 - API - Encapsulamento em C#/ApiEncapsulamento
    ```
 
 3. **Executar**:
@@ -183,23 +217,26 @@ public void AtualizarDados(string nome, string email, DateTime dataNascimento)
    ```
 
 4. **Testar**:
-   - Swagger: `https://localhost:5001/swagger`
    - API: `https://localhost:5001/api/usuarios`
+   - Arquivo de testes: `ApiEncapsulamento.http`
+
+---
 
 ---
 
 ## 🧪 Como Testar
 
-### Opção 1: Swagger UI
-- Acesse `https://localhost:5001/swagger`
-- Interface gráfica para testar todos os endpoints
-
-### Opção 2: REST Client (VSCode)
-- Abra `ApiEncapsulamento.http` (no repositório)
+### Opção 1: REST Client (VSCode) - RECOMENDADO
+- Abra `ApiEncapsulamento.http` no VS Code
 - Clique em "Send Request" para cada requisição
+- Veja as respostas diretamente no editor
 
-### Opção 3: Postman/cURL
+### Opção 2: Postman/cURL
 - Use os endpoints documentados em `documentation.md`
+- Importe as requisições do arquivo `ApiEncapsulamento.http`
+
+### Opção 3: Navegador/Insomnia
+- Use as URLs dos endpoints para testes manuais
 
 ---
 
@@ -260,7 +297,11 @@ info: Microsoft.Hosting.Lifetime[0]
 
 ### ✅ Funcionalidades
 - [x] API responde em HTTPS (porta 5001)
-- [x] Swagger UI disponível
+- [x] 5 endpoints REST funcionais (GET, POST, PUT, DELETE)
+- [x] CRUD completo implementado
+- [x] Validações de encapsulamento ativas
+- [x] Dados de teste carregados
+- [x] Arquivo de testes `ApiEncapsulamento.http` disponível
 - [x] 5 endpoints REST funcionais
 - [x] CRUD completo implementado
 - [x] Validações de encapsulamento ativas
@@ -283,34 +324,14 @@ info: Microsoft.Hosting.Lifetime[0]
 
 ---
 
-## 🔍 Análise dos Conceitos
-
-### Encapsulamento Implementado
-
-| Conceito | Implementação | Exemplo |
-|----------|---------------|---------|
-| **Campos Privados** | `_nome`, `_email`, etc. | Protegidos contra acesso direto |
-| **Propriedades Públicas** | `Nome`, `Email` | Interface controlada |
-| **Validação** | Setters com regras | Nome não vazio, email válido |
-| **Métodos de Controle** | `AtualizarDados()` | Atualização validada |
-| **Propriedades Calculadas** | `Idade` | Somente leitura, calculada |
-
-### Benefícios Demonstrados
-
-✅ **Segurança**: Dados não modificáveis diretamente
-✅ **Integridade**: Validações garantem dados corretos
-✅ **Manutenibilidade**: Mudanças internas não afetam externos
-✅ **Reutilização**: Classe pode ser usada em diferentes contextos
-
----
-
-## 📞 Suporte
+## 🔍 Suporte
 
 Para dúvidas ou problemas:
 1. Verificar `documentation.md` para explicações detalhadas
 2. Consultar logs do terminal para erros
-3. Verificar se .NET 6.0+ está instalado
+3. Verificar se .NET 9.0 está instalado
 4. Confirmar portas 5000/5001 livres
+5. Usar o arquivo `ApiEncapsulamento.http` para testes
 
 ---
 
@@ -318,12 +339,13 @@ Para dúvidas ou problemas:
 
 A atividade foi **concluída com sucesso**, demonstrando o conceito de encapsulamento através de uma API REST em C# com ASP.NET Core. Todos os requisitos foram atendidos:
 
-✅ **API em C#**: Implementada com ASP.NET Core
+✅ **API em C#**: Implementada com ASP.NET Core (.NET 9.0)
 ✅ **Encapsulamento**: Campos privados, propriedades validadas
 ✅ **CRUD**: Operações completas de gerenciamento
 ✅ **Validação**: Regras de negócio nos setters
 ✅ **Documentação**: Explicação completa dos conceitos
-✅ **Código**: Disponível no repositório GitHub
+✅ **Código**: Desenvolvido e disponível localmente e no repositório
+✅ **Testes**: Arquivo `ApiEncapsulamento.http` com casos de teste
 
 **Link do Repositório:** https://github.com/Luizx0/desenvolvimento-de-distemas
 
@@ -332,4 +354,4 @@ A atividade foi **concluída com sucesso**, demonstrando o conceito de encapsula
 **Disciplina**: Desenvolvimento de Sistemas
 **Atividade**: 60 - API - Encapsulamento em C#
 **Data**: Abril 2026
-**Status**: ✅ CONCLUÍDA
+**Status**: ✅ CONCLUÍDA - Código Desenvolvido e Testado
